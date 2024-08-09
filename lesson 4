@@ -1,0 +1,4 @@
+#Lesson 4
+
+response = input("How are you today?")
+print("You said you are feeling: ", response)
