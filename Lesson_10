@@ -1,0 +1,30 @@
+from helper_functions import *
+print("¯\_(ツ)_/¯")
+print_llm_response("What is the capital of France?")
+type(17)
+print( len("Hello World!") ) 
+print(round(42.17))
+
+string_length = len("Hello World!")
+print(string_length)
+
+name = "Tommy"
+potatoes = 4.75
+prompt = f"""Write a couplet about my friend {name} who has about {round(potatoes)} potatoes"""
+response = get_llm_response(prompt)
+print(response)
+
+
+# Enter one of your favorite numbers. Multiply the result by 10 and save it to a variable called 'lucky_number'.
+# Print a message saying "Your lucky number is [lucky_number]!"
+
+lucky_number = 100
+result = (lucky_number * 10)
+print(f"Your lucky number is {result}!")
+
+# Use print_llm_response() to get a knock-knock joke with the specified number of knocks. Use the 
+# prompt variable to save your prompt before calling print_llm_response()
+
+number_of_knocks = 5
+prompt = f"""Write a short knock knock joke using {number_of_knocks}"""
+print_llm_response(prompt)
